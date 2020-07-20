@@ -1,17 +1,12 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import home from "./home";
+import bookshelf from "./bookshelf";
+import mine from "./mine";
 
 Vue.use(VueRouter);
 
-const routes = [
-  {
-    path: "/about",
-    name: "About",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
-  },
-];
+const routes = [home, bookshelf, mine];
 
 const router = new VueRouter({
   mode: "history",
