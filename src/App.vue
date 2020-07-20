@@ -1,5 +1,6 @@
 <template>
-  <div id="app">
+  <!-- <keep-alive> 用于缓存 -->
+  <keep-alive>
     <router-view />
-  </div>
+  </keep-alive>
 </template>
